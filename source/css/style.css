@@ -645,6 +645,17 @@ button {
 }
 
 /* basic */
+::view-transition-image-pair(root) {
+  isolation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+  display: block;
+}
+
 html {
   margin: 0 auto;
 }
@@ -656,6 +667,7 @@ body {
   width: 1080px;
   height: 100vh;
   overflow: hidden;
+  background: #000;
 }
 
 body {
@@ -730,6 +742,16 @@ body div#content.user section.main-video video {
   -o-object-fit: cover;
      object-fit: cover;
 }
+body div#content.user section.main-video div.image {
+  width: 100%;
+  height: 812px;
+}
+body div#content.user section.main-video div.image img {
+  width: 100%;
+  height: 812px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 body div#content.user section.intro-message {
   width: 100%;
   text-align: center;
@@ -793,23 +815,28 @@ body div#content.user section.main-btn a span {
   font-size: 28px;
   color: #777;
 }
-body div#content.user section.ticket-message {
+body div#content.user div.sub-box {
+  display: inline-block;
+  width: 100%;
+  height: 1460px;
+}
+body div#content.user div.sub-box section.ticket-message {
   padding: 60px 0 0;
   text-align: center;
   height: 220px;
 }
-body div#content.user section.ticket-message strong {
+body div#content.user div.sub-box section.ticket-message strong {
   display: block;
   font-size: 28px;
   color: #fff;
   font-weight: 500;
 }
-body div#content.user section.ticket-message span {
+body div#content.user div.sub-box section.ticket-message span {
   display: block;
   font-size: 22px;
   color: #8a8eac;
 }
-body div#content.user section.ticket-message i {
+body div#content.user div.sub-box section.ticket-message i {
   font-style: normal;
   display: block;
   font-size: 32px;
@@ -818,7 +845,7 @@ body div#content.user section.ticket-message i {
   margin: 10px 0 0;
   color: #ffcc00;
 }
-body div#content.user section.ticket-select {
+body div#content.user div.sub-box section.ticket-select {
   background: rgba(0, 0, 0, 0.4);
   margin: 0 86px;
   padding: 20px 0 0 20px;
@@ -826,7 +853,7 @@ body div#content.user section.ticket-select {
   font-size: 0;
   height: 700px;
 }
-body div#content.user section.ticket-select button {
+body div#content.user div.sub-box section.ticket-select button {
   position: relative;
   overflow: hidden;
   width: 276px;
@@ -837,48 +864,48 @@ body div#content.user section.ticket-select button {
   border-radius: 14px;
   background: none;
 }
-body div#content.user section.ticket-select button.type1 {
+body div#content.user div.sub-box section.ticket-select button.type1 {
   background: url(../images/sub_btn0101.png) no-repeat center top/100% auto;
 }
-body div#content.user section.ticket-select button.type2 {
+body div#content.user div.sub-box section.ticket-select button.type2 {
   background: url(../images/sub_btn0102.png) no-repeat center top/100% auto;
 }
-body div#content.user section.ticket-select button.type3 {
+body div#content.user div.sub-box section.ticket-select button.type3 {
   background: url(../images/sub_btn0103.png) no-repeat center top/100% auto;
 }
-body div#content.user section.ticket-select button.type4 {
+body div#content.user div.sub-box section.ticket-select button.type4 {
   background: url(../images/sub_btn0104.png) no-repeat center top/100% auto;
 }
-body div#content.user section.ticket-select button.type5 {
+body div#content.user div.sub-box section.ticket-select button.type5 {
   background: url(../images/sub_btn0105.png) no-repeat center top/100% auto;
 }
-body div#content.user section.ticket-select button img {
+body div#content.user div.sub-box section.ticket-select button img {
   position: absolute;
   z-index: -1;
   left: 0;
   right: 0;
   top: 0;
 }
-body div#content.user section.ticket-select button strong {
+body div#content.user div.sub-box section.ticket-select button strong {
   display: block;
   font-weight: 600;
   font-size: 30px;
   color: #171860;
 }
-body div#content.user section.ticket-select button span {
+body div#content.user div.sub-box section.ticket-select button span {
   display: block;
   font-size: 28px;
 }
-body div#content.user section.ticket-select button span u {
+body div#content.user div.sub-box section.ticket-select button span u {
   text-decoration: none;
   font-weight: 900;
 }
-body div#content.user section.ticket-select button > u {
+body div#content.user div.sub-box section.ticket-select button > u {
   font-size: 24px;
   color: #777;
   text-decoration: none;
 }
-body div#content.user section.ticket-list {
+body div#content.user div.sub-box section.ticket-list {
   position: relative;
   z-index: 10;
   background: rgba(0, 0, 0, 0.4);
@@ -889,7 +916,7 @@ body div#content.user section.ticket-list {
   height: 300px;
   overflow-y: scroll;
 }
-body div#content.user section.ticket-list div.line {
+body div#content.user div.sub-box section.ticket-list div.line {
   display: flex;
   justify-content: space-between;
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -898,16 +925,16 @@ body div#content.user section.ticket-list div.line {
   margin: 0 0 14px;
   color: #fff;
 }
-body div#content.user section.ticket-list div.line strong {
+body div#content.user div.sub-box section.ticket-list div.line strong {
   display: block;
   font-size: 32px;
   font-weight: 500;
 }
-body div#content.user section.ticket-list div.line div.count {
+body div#content.user div.sub-box section.ticket-list div.line div.count {
   font-size: 32px;
   font-weight: 500;
 }
-body div#content.user section.ticket-list div.line div.count button {
+body div#content.user div.sub-box section.ticket-list div.line div.count button {
   background: none;
   border: none;
   background: #4e5db2;
@@ -915,34 +942,34 @@ body div#content.user section.ticket-list div.line div.count button {
   height: 50px;
   border-radius: 5px;
 }
-body div#content.user section.ticket-list div.line div.count input {
+body div#content.user div.sub-box section.ticket-list div.line div.count input {
   width: 70px;
   border: none;
   background: none;
   text-align: center;
 }
-body div#content.user section.ticket-list div.line span {
+body div#content.user div.sub-box section.ticket-list div.line span {
   display: block;
   text-align: right;
   font-size: 32px;
   font-weight: 500;
 }
-body div#content.user section.ticket-list div.line span u {
+body div#content.user div.sub-box section.ticket-list div.line span u {
   text-decoration: none;
 }
-body div#content.user section.ticket-view {
+body div#content.user div.sub-box section.ticket-view {
   background: rgba(0, 0, 0, 0.4);
   margin: 0 86px 0;
   border-radius: 20px 20px 0 0;
   height: 700px;
 }
-body div#content.user section.ticket-view div.outline {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide {
   position: relative;
   z-index: 10;
   display: flex;
   padding: 20px 20px 0;
 }
-body div#content.user section.ticket-view div.outline p.big-image {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image {
   position: relative;
   overflow: hidden;
   width: 276px;
@@ -953,55 +980,56 @@ body div#content.user section.ticket-view div.outline p.big-image {
   border-radius: 14px;
   text-align: center;
 }
-body div#content.user section.ticket-view div.outline p.big-image img {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image img {
   position: absolute;
   z-index: -1;
   left: 0;
   right: 0;
   top: 0;
 }
-body div#content.user section.ticket-view div.outline p.big-image strong {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image strong {
   display: block;
   font-weight: 600;
   font-size: 30px;
   color: #171860;
 }
-body div#content.user section.ticket-view div.outline p.big-image span {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image span {
   display: block;
   font-size: 28px;
 }
-body div#content.user section.ticket-view div.outline p.big-image span u {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image span u {
   text-decoration: none;
   font-weight: 900;
 }
-body div#content.user section.ticket-view div.outline p.big-image > u {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image > u {
   font-size: 24px;
   color: #777;
   text-decoration: none;
 }
-body div#content.user section.ticket-view div.outline dl {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl {
   margin: 0;
   flex-grow: 1;
+  width: 586px;
 }
-body div#content.user section.ticket-view div.outline dl dt {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dt {
   float: left;
   position: relative;
   left: 20px;
   top: 20px;
   z-index: 2;
 }
-body div#content.user section.ticket-view div.outline dl dt strong {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dt strong {
   display: block;
   font-size: 28px;
   font-weight: 500;
   color: #fff;
 }
-body div#content.user section.ticket-view div.outline dl dt span {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dt span {
   display: block;
   font-size: 20px;
   color: #777;
 }
-body div#content.user section.ticket-view div.outline dl dd {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dd {
   position: relative;
   margin: 0;
   padding: 20px 20px 20px 200px;
@@ -1012,11 +1040,7 @@ body div#content.user section.ticket-view div.outline dl dd {
   margin-bottom: 6px;
   background: rgba(255, 255, 255, 0.1);
 }
-body div#content.user section.ticket-view div.outline dl dd:first-of-type {
-  height: 240px;
-  overflow-y: scroll;
-}
-body div#content.user section.ticket-view div.outline dl dd::before {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dd::before {
   content: "";
   display: block;
   position: absolute;
@@ -1027,7 +1051,93 @@ body div#content.user section.ticket-view div.outline dl dd::before {
   width: 180px;
   border-radius: 14px 0 0 14px;
 }
-body div#content.user section.ticket-total {
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dd span {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 50px;
+}
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dd:first-of-type {
+  height: 240px;
+}
+body div#content.user div.sub-box section.ticket-view div.swiper-slide dl dd:first-of-type span {
+  -webkit-line-clamp: 4;
+}
+body div#content.user div.sub-box section.card {
+  position: relative;
+  z-index: 10;
+  background: url(../images/card.png) no-repeat center 340px/300px 228px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 220px 86px 20px;
+  padding: 80px 40px 0 40px;
+  border-radius: 20px;
+  font-size: 0;
+  height: 700px;
+  text-align: center;
+}
+body div#content.user div.sub-box section.card strong {
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+body div#content.user div.sub-box section.card strong span {
+  display: block;
+}
+body div#content.user div.sub-box section.card p {
+  margin: 0;
+  display: block;
+  font-size: 22px;
+  color: #8a8eac;
+}
+body div#content.user div.sub-box section.card p span {
+  display: block;
+}
+body div#content.user div.sub-box section.result {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 220px 86px 20px;
+  padding: 80px 40px 0 40px;
+  border-radius: 20px;
+  font-size: 0;
+  height: 700px;
+  text-align: center;
+}
+body div#content.user div.sub-box section.result h2 {
+  font-size: 62px;
+  color: #fff;
+  margin: 0 0 40px;
+  font-weight: 500;
+}
+body div#content.user div.sub-box section.result h2 i {
+  display: block;
+  font-size: 180px;
+}
+body div#content.user div.sub-box section.result strong {
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+body div#content.user div.sub-box section.result strong span {
+  display: block;
+}
+body div#content.user div.sub-box section.result p {
+  margin: 0;
+  display: block;
+  font-size: 22px;
+  color: #8a8eac;
+}
+body div#content.user div.sub-box section.result p span {
+  display: block;
+}
+body div#content.user div.sub-box section.ticket-total {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1039,32 +1149,29 @@ body div#content.user section.ticket-total {
   height: 140px;
   color: #fff;
 }
-body div#content.user section.ticket-total h2 {
+body div#content.user div.sub-box section.ticket-total h2 {
   margin: 0;
   font-weight: 500;
 }
-body div#content.user section.ticket-total h2 span {
+body div#content.user div.sub-box section.ticket-total h2 span {
   display: block;
   font-size: 36px;
 }
-body div#content.user section.ticket-total h2 small {
+body div#content.user div.sub-box section.ticket-total h2 small {
   display: block;
   font-size: 26px;
   font-weight: 400;
   color: #777;
 }
-body div#content.user section.ticket-total strong {
+body div#content.user div.sub-box section.ticket-total strong {
   display: block;
   font-size: 48px;
 }
-body div#content.user section.ticket-total strong u {
+body div#content.user div.sub-box section.ticket-total strong u {
   text-decoration: none;
 }
 body div#content.user nav {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  position: relative;
   padding: 0 0 120px;
   text-align: right;
   font-size: 0;
@@ -1073,9 +1180,9 @@ body div#content.user nav::after {
   content: "";
   display: block;
   position: absolute;
+  top: 130px;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: 40px;
+  margin-left: -180px;
   width: 360px;
   height: 60px;
   background: url(../images/logo2.svg) no-repeat center/100% auto;
@@ -1083,8 +1190,9 @@ body div#content.user nav::after {
 body div#content.user nav a.root {
   display: block;
   position: absolute;
-  text-align: left;
   left: 0;
+  top: 0;
+  text-align: left;
   bottom: 120px;
   width: 275px;
   height: 111px;

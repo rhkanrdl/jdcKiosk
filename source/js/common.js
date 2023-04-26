@@ -9,6 +9,14 @@ $(function () {
     },
   });
 
+  var swiper2 = new Swiper(".view-swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+
 
 });
 
@@ -22,3 +30,4 @@ $(window).on('resize', function () {
   windowh = $(window).height();
   windowW = $(window).width();
 });
+
