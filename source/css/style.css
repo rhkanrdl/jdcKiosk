@@ -644,6 +644,152 @@ button {
   background: #0389da;
 }
 
+.modal-admin {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-admin.on {
+  display: block;
+}
+.modal-admin .modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  padding: 40px;
+  width: 980px;
+  margin-left: -490px;
+  border-radius: 20px;
+  word-break: keep-all;
+}
+.modal-admin .modal-content h2 {
+  font-size: 36px;
+  margin: 0 0 30px;
+  padding: 0 0 30px;
+  border-bottom: 2px solid #333;
+}
+.modal-admin .modal-content h2 button {
+  position: absolute;
+  right: 20px;
+  bottom: 10;
+  border: none;
+  background: transparent;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background: url("../images/icon-close.svg") no-repeat center/100% auto;
+}
+.modal-admin .modal-content button.close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  border: none;
+  background: none;
+}
+.modal-admin .modal-content button.close i {
+  font-size: 60px;
+}
+.modal-admin .modal-content div.board-tool {
+  margin: 20px 0 40px;
+  text-align: center;
+}
+.modal-admin .modal-content div.board-tool > button {
+  border: none;
+  background: none;
+  vertical-align: top;
+  position: relative;
+  top: 2px;
+}
+.modal-admin .modal-content div.board-tool > button i {
+  font-size: 34px;
+}
+.modal-admin .modal-content div.board-tool span {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px;
+  font-size: 24px;
+  font-weight: 800;
+}
+.modal-admin .modal-content div.board-tool div.search {
+  display: inline-block;
+  margin-left: 20px;
+}
+.modal-admin .modal-content div.board-tool div.search input {
+  font-size: 24px;
+  border: 1px solid #ccc;
+}
+.modal-admin .modal-content div.board-tool div.search button {
+  font-size: 24px;
+  border: 1px solid #000;
+  background: #333;
+  color: #fff;
+}
+.modal-admin .modal-content table {
+  width: 100%;
+  font-size: 18px;
+}
+.modal-admin .modal-content table thead tr th {
+  background: #333;
+  color: #fff;
+  padding: 10px 1px;
+  border-right: 1px solid #fff;
+}
+.modal-admin .modal-content table thead tr th:last-child {
+  border: none;
+}
+.modal-admin .modal-content table tbody tr:nth-child(odd) {
+  background: #eee;
+}
+.modal-admin .modal-content table tbody tr td {
+  padding: 10px 1px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+.modal-admin .modal-content table tbody tr td:last-child {
+  border-right: none;
+}
+.modal-admin .modal-content table tbody tr td button {
+  border: none;
+  background: #555;
+  color: #fff;
+}
+.modal-admin .modal-content > textarea {
+  background: #222;
+  width: 100%;
+  height: 500px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+.modal-admin .modal-content div.btn-set {
+  text-align: center;
+  margin: 40px 0 0;
+  font-size: 0;
+}
+.modal-admin .modal-content div.btn-set button {
+  border: none;
+  background: #666;
+  color: #fff;
+  font-size: 36px;
+  padding: 20px 60px;
+  border-radius: 10px;
+  margin: 0 10px;
+  box-shadow: 0 -6px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+.modal-admin .modal-content div.btn-set button.main {
+  background: #0389da;
+}
+
 /* basic */
 ::view-transition-image-pair(root) {
   isolation: auto;
@@ -699,6 +845,7 @@ body div#content {
   position: relative;
   height: calc(100% - 226px);
   /* User */
+  /* admin */
 }
 body div#content.user section.welcome-message {
   height: 812px;
@@ -1170,13 +1317,211 @@ body div#content.user div.sub-box section.ticket-total strong {
 body div#content.user div.sub-box section.ticket-total strong u {
   text-decoration: none;
 }
-body div#content.user nav {
+body div#content.admin div.sub-box {
+  display: inline-block;
+  width: 100%;
+  height: 1460px;
+}
+body div#content.admin div.sub-box section.login {
+  width: 800px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 40px;
+  margin: 160px auto;
+  padding: 80px 160px;
+  text-align: center;
+  font-size: 0;
+}
+body div#content.admin div.sub-box section.login fieldset {
+  border: none;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 0;
+}
+body div#content.admin div.sub-box section.login fieldset legend {
+  font-size: 46px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+body div#content.admin div.sub-box section.login fieldset label {
+  display: inline-block;
+  background: #eee;
+  line-height: 80px;
+  font-size: 32px;
+  width: 35%;
+  padding: 0 20px;
+}
+body div#content.admin div.sub-box section.login fieldset input {
+  width: 100%;
+  font-size: 32px;
+  height: 100px;
+  border: none;
+  background: #eee;
+  padding: 0 20px;
+  font-weight: 900;
+  text-align: center;
+  border-radius: 20px;
+  margin: 0 0 10px;
+}
+body div#content.admin div.sub-box section.login fieldset input::-moz-placeholder {
+  color: #999;
+  font-weight: 500;
+}
+body div#content.admin div.sub-box section.login fieldset input::placeholder {
+  color: #999;
+  font-weight: 500;
+}
+body div#content.admin div.sub-box section.login button {
+  font-size: 32px;
+  height: 80px;
+  width: 30%;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  color: #fff;
+  background: #444;
+}
+body div#content.admin div.sub-box section.login button.main {
+  border-radius: 20px 0 0 20px;
+  background: #4e5db2;
+  width: 70%;
+}
+body div#content.admin div.sub-box section.main {
+  width: 1000px;
+  margin: 60px auto 0;
+  font-size: 0;
+  flex-wrap: wrap;
+}
+body div#content.admin div.sub-box section.main fieldset {
+  width: 100%;
+  border: none;
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-top: 4px solid rgba(255, 255, 255, 0.2);
+}
+body div#content.admin div.sub-box section.main fieldset legend {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 0 20px;
+  margin: 0 0 20px 20px;
+  color: #fff;
+  border-bottom: 1px;
+}
+body div#content.admin div.sub-box section.main fieldset p {
+  display: inline-block;
+  margin: 0 0 10px;
+  font-size: 26px;
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+}
+body div#content.admin div.sub-box section.main fieldset p:nth-of-type(3n) {
+  margin-right: 0;
+}
+body div#content.admin div.sub-box section.main fieldset p label {
+  display: block;
+  color: #fff;
+  margin: 0 0 10px;
+}
+body div#content.admin div.sub-box section.main fieldset p input {
+  height: 52px;
+  width: 100%;
+  border: none;
+  padding: 0 20px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+body div#content.admin div.sub-box section.main fieldset div {
+  display: inline-block;
+  margin: 0 0 20px;
+  font-size: 26px;
+  display: flex;
+}
+body div#content.admin div.sub-box section.main fieldset div input {
+  display: none;
+}
+body div#content.admin div.sub-box section.main fieldset div label {
+  display: block;
+  color: #fff;
+  flex-grow: 1;
+  text-align: center;
+  background: #222;
+  padding: 6px;
+}
+body div#content.admin div.sub-box section.main fieldset div label:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+body div#content.admin div.sub-box section.main fieldset div label:last-of-type {
+  border-radius: 0 10px 10px 0;
+}
+body div#content.admin div.sub-box section.main fieldset div input:checked + label {
+  background: #0389da;
+}
+body div#content.admin div.sub-box section.main fieldset textarea {
+  width: 100%;
+  font-size: 24px;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 180px;
+  margin: 0 0 10px;
+}
+body div#content.admin div.sub-box section.main div.links {
+  display: flex;
+}
+body div#content.admin div.sub-box section.main div.links a,
+body div#content.admin div.sub-box section.main div.links button {
+  display: block;
+  border: none;
+  flex-grow: 1;
+  font-size: 26px;
+  background: #ffcc00;
+  color: #000;
+  text-align: center;
+  line-height: 80px;
+  margin: 0 3px 0 0;
+  font-weight: 600;
+  box-shadow: 0 -6px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+body div#content.admin div.sub-box section.main div.links a:first-of-type,
+body div#content.admin div.sub-box section.main div.links button:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+body div#content.admin div.sub-box section.main div.links a:last-of-type,
+body div#content.admin div.sub-box section.main div.links button:last-of-type {
+  border-radius: 0 10px 10px 0;
+  margin: 0;
+}
+body div#content.admin div.sub-box section.main div.tools {
+  display: flex;
+  margin-top: 6px;
+}
+body div#content.admin div.sub-box section.main div.tools a,
+body div#content.admin div.sub-box section.main div.tools button {
+  display: block;
+  border: none;
+  flex-grow: 1;
+  font-size: 26px;
+  background: #4e5db2;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  margin: 0 3px 0 0;
+  font-weight: 600;
+  box-shadow: 0 -6px 0 0 rgba(0, 0, 0, 0.4) inset;
+}
+body div#content.admin div.sub-box section.main div.tools a:first-of-type,
+body div#content.admin div.sub-box section.main div.tools button:first-of-type {
+  border-radius: 10px 0 0 10px;
+}
+body div#content.admin div.sub-box section.main div.tools a:last-of-type,
+body div#content.admin div.sub-box section.main div.tools button:last-of-type {
+  border-radius: 0 10px 10px 0;
+  margin: 0;
+}
+body div#content nav {
   position: relative;
   padding: 0 0 120px;
   text-align: right;
   font-size: 0;
 }
-body div#content.user nav::after {
+body div#content nav::after {
   content: "";
   display: block;
   position: absolute;
@@ -1187,7 +1532,7 @@ body div#content.user nav::after {
   height: 60px;
   background: url(../images/logo2.svg) no-repeat center/100% auto;
 }
-body div#content.user nav a.root {
+body div#content nav a.root {
   display: block;
   position: absolute;
   left: 0;
@@ -1200,38 +1545,38 @@ body div#content.user nav a.root {
   line-height: 1.2;
   padding: 20px 0 0 100px;
 }
-body div#content.user nav a.root strong {
+body div#content nav a.root strong {
   display: block;
   font-size: 28px;
   font-weight: 600;
 }
-body div#content.user nav a.root span {
+body div#content nav a.root span {
   display: block;
   font-size: 26px;
   color: #777;
 }
-body div#content.user nav button {
+body div#content nav button {
   height: 111px;
   border: none;
   padding: 0 80px;
   box-shadow: 0 -6px 0 0 rgba(0, 0, 0, 0.4) inset;
 }
-body div#content.user nav button:first-of-type {
+body div#content nav button:first-of-type {
   border-radius: 10px 0 0 10px;
 }
-body div#content.user nav button.delete {
+body div#content nav button.delete {
   background: #4e5db2;
 }
-body div#content.user nav button.pay {
+body div#content nav button.pay {
   background: #0389da;
 }
-body div#content.user nav button strong {
+body div#content nav button strong {
   display: block;
   font-size: 28px;
   font-weight: 600;
   color: #fff;
 }
-body div#content.user nav button span {
+body div#content nav button span {
   display: block;
   font-size: 26px;
   color: rgba(255, 255, 255, 0.6);

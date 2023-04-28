@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>항공우주박물관</title>
+    <link href="source/css/boxicons.css" rel="stylesheet" />
+    <link href="source/css/swiper-bundle.css" rel="stylesheet" />
+    <link href="source/css/style.css" rel="stylesheet" />
+
+    <!-- javaScript -->
+    <script src="source/js/jquery-3.5.1.min.js"></script>
+    <script src="source/js/swiper-bundle.js"></script>
+    <script src="source/js/common.js"></script>
+  </head>
+
+  <body class="main">
+
+    <!-- S:header -->
+    <header id="header">
+        <h1>
+          <span>TICKET</span>
+          <small>무인발권시스템</small>
+        </h1>
+    </header>
+    <!-- E:header -->
+
+
+    <!-- S:mainContent -->
+    <div id="content" class="admin">
+
+      <div class="sub-box">
+
+        <section class="main">
+
+            <fieldset>
+                <legend>단말기 세팅</legend>
+
+                <p>
+                    <label for="posID">포스 ID</label>
+                    <input id="posID" type="text" value="001800069">
+                </p>
+
+                <p>
+                    <label for="posNUM">포스보안 식별번호</label>
+                    <input id="posNUM" type="text" value="#####JAMAPOS0001">
+                </p>
+
+                <p>
+                    <label for="posPW">포스 PW</label>
+                    <input id="posPW" type="password" value="asdf1234">
+                </p>
+
+                <p>
+                    <label for="readerNUM">리더기 보안 식별번호</label>
+                    <input id="readerNUM" type="text" value="">
+                </p>
+
+                <p>
+                    <label for="serviceIP">서비스 IP</label>
+                    <input id="serviceIP" type="text" value="http://192.168.35.147:6808">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>홍보화면 모드 선택</legend>
+
+                <div>
+                    <input type="radio" name="screen" id="mov" checked>
+                    <label for="mov">동영상</label>
+
+                    <input type="radio" name="screen" id="img">
+                    <label for="img">이미지</label>
+
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>무인 모드 선택</legend>
+
+                <div>
+                    <input type="radio" name="mode" id="mode1" checked>
+                    <label for="mode1">전체</label>
+
+                    <input type="radio" name="mode" id="mode2">
+                    <label for="mode2">입장권</label>
+                    
+                    <input type="radio" name="mode" id="mode3">
+                    <label for="mode3">체험/상품권</label>
+
+
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>입장권 공지 여부</legend>
+
+                <div>
+                    <input type="radio" name="notice" id="notice1" checked>
+                    <label for="notice1">사용</label>
+
+                    <input type="radio" name="notice" id="notice2">
+                    <label for="notice2">사용안함</label>
+
+                </div>
+                
+
+                <textarea placeholder="공지내용 입력"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>입장권 수량체크</legend>
+
+                <div>
+                    <input type="radio" name="quantity" id="quantity1" checked>
+                    <label for="quantity1">1명</label>
+
+                    <input type="radio" name="quantity" id="quantity2">
+                    <label for="quantity2">2명</label>
+                    
+                    <input type="radio" name="quantity" id="quantity3">
+                    <label for="quantity3">3명</label>
+                    
+                    <input type="radio" name="quantity" id="quantity4">
+                    <label for="quantity4">4명</label>
+                    
+                    <input type="radio" name="quantity" id="quantity5">
+                    <label for="quantity5">5명</label>
+                    
+                    <input type="radio" name="quantity" id="quantity6">
+                    <label for="quantity6">6명</label>
+                    
+                    <input type="radio" name="quantity" id="quantity7">
+                    <label for="quantity7">7명</label>
+                    
+                    <input type="radio" name="quantity" id="quantity8">
+                    <label for="quantity8">8명</label>
+                    
+                    <input type="radio" name="quantity" id="quantity9">
+                    <label for="quantity9">9명</label>
+
+
+                </div>
+            </fieldset>
+
+            <div class="links">
+                <button>티켓 재출력</button>
+                <button>로그보기</button>
+                <button>테스트 출력</button>
+                <button>프로그램종료</button>
+                <button>무결성 체크</button>
+                <button>무결성 로그보기</button>
+            </div>
+
+            <div class="tools">
+                <button>비밀번호 변경</button>
+                <button>저장</button>
+                <button>닫기</button>
+
+            </div>
+
+
+            <!-- 결재내역 / 에러내역 -->
+            <section class="modal-admin"> <!-- on 클래스로 보여줌 -->
+                <div class="modal-content">
+                    <h2>결재내역</h2>
+                    <button class="close"><i class='bx bx-x'></i>닫기</button>
+                    
+                    <div class="board-tool">
+                        <button><i class='bx bx-chevron-left' ></i>이전</button>
+                        <span>2023년 04월 24일</span>
+                        <button>다음<i class='bx bx-chevron-right' ></i></button>
+
+                        <div class="search">
+                            <input type="text" placeholder="승인번호">
+                            <button>검색</button>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>포스UID</th>
+                                <th>결제타입</th>
+                                <th>벤사</th>
+                                <th>결제일</th>
+                                <th>카드사</th>
+                                <th>발급사</th>
+                                <th>승인번호</th>
+                                <th>금액</th>
+                                <th>전송여부</th>
+                                <th>재출력</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>포스UID</td>
+                                <td>결제타입</td>
+                                <td>벤사</td>
+                                <td>결제일</td>
+                                <td>카드사</td>
+                                <td>발급사</td>
+                                <td>승인번호</td>
+                                <td>금액</td>
+                                <td>전송여부</td>
+                                <td><button>재출력</button></td>
+                            </tr>
+                            <tr>
+                                <td>포스UID</td>
+                                <td>결제타입</td>
+                                <td>벤사</td>
+                                <td>결제일</td>
+                                <td>카드사</td>
+                                <td>발급사</td>
+                                <td>승인번호</td>
+                                <td>금액</td>
+                                <td>전송여부</td>
+                                <td><button>재출력</button></td>
+                            </tr>
+                            <tr>
+                                <td>포스UID</td>
+                                <td>결제타입</td>
+                                <td>벤사</td>
+                                <td>결제일</td>
+                                <td>카드사</td>
+                                <td>발급사</td>
+                                <td>승인번호</td>
+                                <td>금액</td>
+                                <td>전송여부</td>
+                                <td><button>재출력</button></td>
+                            </tr>
+                            <tr>
+                                <td>포스UID</td>
+                                <td>결제타입</td>
+                                <td>벤사</td>
+                                <td>결제일</td>
+                                <td>카드사</td>
+                                <td>발급사</td>
+                                <td>승인번호</td>
+                                <td>금액</td>
+                                <td>전송여부</td>
+                                <td><button>재출력</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+              </section>
+
+
+            <!-- 로그 -->
+            <section class="modal-admin"> <!-- on 클래스로 보여줌 -->
+                <div class="modal-content">
+                    <h2>무결성 로그</h2>
+                    <button class="close"><i class='bx bx-x'></i>닫기</button>
+                    
+                    <div class="board-tool">
+                        <button><i class='bx bx-chevron-left' ></i>이전</button>
+                        <span>2023년 04월 24일</span>
+                        <button>다음<i class='bx bx-chevron-right' ></i></button>
+
+                    </div>
+                    <textarea></textarea>
+                </div>
+              </section>
+
+              
+
+        </section>
+
+
+      </div>
+
+
+    </div>
+    <!-- E:mainContent -->
+
+
+  </body>
+</html>
