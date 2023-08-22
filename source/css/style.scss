@@ -536,7 +536,7 @@ body {
                 @include inner-shadow($x:0,$y: -6px, $blur: 0, $spread: 0, $alpha: 0.4);
                 border-radius:20px;
 
-                &.cancle {
+                &.cancel {
                   background:#4e5db2;
                 }
 
