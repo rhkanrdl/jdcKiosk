@@ -384,43 +384,7 @@ https://github.com/orioncactus/pretendard
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 http://scripts.sil.org/OFL
-*/
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../font/NotoSansKR-Thin.woff2") format("woff2"), url("../font/NotoSansKR-Thin.woff") format("woff"), url("../font/NotoSansKR-Thin.otf") format("opentype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../font/NotoSansKR-Light.woff2") format("woff2"), url("../font/NotoSansKR-Light.woff") format("woff"), url("../font/NotoSansKR-Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../font/NotoSansKR-Regular.woff2") format("woff2"), url("../font/NotoSansKR-Regular.woff2") format("woff"), url("../font/NotoSansKR-Regular.otf") format("opentype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../font/NotoSansKR-Medium.woff2") format("woff2"), url("../font/NotoSansKR-Medium.woff") format("woff"), url("../font/NotoSansKR-Medium.otf") format("opentype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../font/NotoSansKR-Bold.woff2") format("woff2"), url("../font/NotoSansKR-Bold.woff") format("woff"), url("../font/NotoSansKR-Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../font/NotoSansKR-Black.woff2") format("woff2"), url("../font/NotoSansKR-Black.woff") format("woff"), url("../font/NotoSansKR-Black.otf") format("opentype");
-}
+// */
 div#content.sub01 div.sub-head {
   background: #74C8FF;
 }
@@ -937,12 +901,13 @@ body div#content.user section.intro-message a {
 body div#content.user section.main-btn {
   display: flex;
   justify-content: center;
+  padding: 0 30px;
 }
 body div#content.user section.main-btn a {
   display: inline-block;
   width: 378px;
   height: 615px;
-  margin: 0 40px;
+  margin: 0 20px;
   padding: 160px 0 0;
   text-align: center;
 }
@@ -951,6 +916,9 @@ body div#content.user section.main-btn a.ticket {
 }
 body div#content.user section.main-btn a.program {
   background: url(../images/main_btn02.png) no-repeat center/100% auto;
+}
+body div#content.user section.main-btn a.product {
+  background: url(../images/main_btn03.png) no-repeat center/100% auto;
 }
 body div#content.user section.main-btn a strong {
   display: block;
