@@ -521,7 +521,48 @@ body {
                 }
               }
             }
+
+            div.btns {
+              
+
+              button {
+                position:absolute;
+                left:20px;
+                bottom:0;
+                width:276px;
+                height:111px;
+                border:none;
+                padding:0;
+                @include inner-shadow($x:0,$y: -6px, $blur: 0, $spread: 0, $alpha: 0.4);
+                border-radius:20px;
+
+                &.cancle {
+                  background:#4e5db2;
+                }
+
+                &.buy {
+                  background:#0389da;
+                  bottom:114px;
+                }
+
+                strong {
+                  display:block;
+                  font-size:28px;
+                  font-weight:600;
+                  color:#fff;
+                }
+
+                span {
+                  display:block;
+                  font-size:26px;
+                  color:rgba(255,255,255,.6);
+                }
+
+              }
+            }
           }
+
+
         }
 
         section.card {
