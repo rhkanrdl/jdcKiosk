@@ -9,12 +9,12 @@ $(function () {
     },
   });
 
-  var swiper2 = new Swiper(".view-swiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+  // var swiper2 = new Swiper(".view-swiper", {
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  // });
 
 
 

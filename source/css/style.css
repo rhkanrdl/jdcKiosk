@@ -961,12 +961,16 @@ body div#content.user div.sub-box section.ticket-message i {
   color: #ffcc00;
 }
 body div#content.user div.sub-box section.ticket-select {
+  display: none;
   background: rgba(0, 0, 0, 0.4);
   margin: 0 86px;
   padding: 20px 0 0 20px;
   border-radius: 20px 20px 0 0;
   font-size: 0;
   height: 700px;
+}
+body div#content.user div.sub-box section.ticket-select.on {
+  display: block;
 }
 body div#content.user div.sub-box section.ticket-select button {
   position: relative;
@@ -1020,63 +1024,15 @@ body div#content.user div.sub-box section.ticket-select button > u {
   color: #777;
   text-decoration: none;
 }
-body div#content.user div.sub-box section.ticket-list {
-  position: relative;
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.4);
-  margin: 0 86px 20px;
-  padding: 20px 20px 0 20px;
-  border-radius: 0 0 20px 20px;
-  font-size: 0;
-  height: 300px;
-  overflow-y: scroll;
-}
-body div#content.user div.sub-box section.ticket-list div.line {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 14px;
-  padding: 14px 40px;
-  margin: 0 0 14px;
-  color: #fff;
-}
-body div#content.user div.sub-box section.ticket-list div.line strong {
-  display: block;
-  font-size: 32px;
-  font-weight: 500;
-}
-body div#content.user div.sub-box section.ticket-list div.line div.count {
-  font-size: 32px;
-  font-weight: 500;
-}
-body div#content.user div.sub-box section.ticket-list div.line div.count button {
-  background: none;
-  border: none;
-  background: #4e5db2;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-}
-body div#content.user div.sub-box section.ticket-list div.line div.count input {
-  width: 70px;
-  border: none;
-  background: none;
-  text-align: center;
-}
-body div#content.user div.sub-box section.ticket-list div.line span {
-  display: block;
-  text-align: right;
-  font-size: 32px;
-  font-weight: 500;
-}
-body div#content.user div.sub-box section.ticket-list div.line span u {
-  text-decoration: none;
-}
 body div#content.user div.sub-box section.ticket-view {
+  display: none;
   background: rgba(0, 0, 0, 0.4);
   margin: 0 86px 0;
   border-radius: 20px 20px 0 0;
   height: 700px;
+}
+body div#content.user div.sub-box section.ticket-view.on {
+  display: block;
 }
 body div#content.user div.sub-box section.ticket-view div.swiper-slide {
   position: relative;
@@ -1209,6 +1165,58 @@ body div#content.user div.sub-box section.ticket-view div.swiper-slide div.btns 
   display: block;
   font-size: 26px;
   color: rgba(255, 255, 255, 0.6);
+}
+body div#content.user div.sub-box section.ticket-list {
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 86px 20px;
+  padding: 20px 20px 0 20px;
+  border-radius: 0 0 20px 20px;
+  font-size: 0;
+  height: 300px;
+  overflow-y: scroll;
+}
+body div#content.user div.sub-box section.ticket-list div.line {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 14px;
+  padding: 14px 40px;
+  margin: 0 0 14px;
+  color: #fff;
+}
+body div#content.user div.sub-box section.ticket-list div.line strong {
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+}
+body div#content.user div.sub-box section.ticket-list div.line div.count {
+  font-size: 32px;
+  font-weight: 500;
+}
+body div#content.user div.sub-box section.ticket-list div.line div.count button {
+  background: none;
+  border: none;
+  background: #4e5db2;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+body div#content.user div.sub-box section.ticket-list div.line div.count input {
+  width: 70px;
+  border: none;
+  background: none;
+  text-align: center;
+}
+body div#content.user div.sub-box section.ticket-list div.line span {
+  display: block;
+  text-align: right;
+  font-size: 32px;
+  font-weight: 500;
+}
+body div#content.user div.sub-box section.ticket-list div.line span u {
+  text-decoration: none;
 }
 body div#content.user div.sub-box section.card {
   position: relative;
