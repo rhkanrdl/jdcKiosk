@@ -570,6 +570,7 @@ button {
   word-break: keep-all;
 }
 .modal .modal-content h2 {
+  position: relative;
   font-size: 36px;
   margin: 0 0 30px;
   padding: 0 0 30px;
@@ -577,14 +578,10 @@ button {
 }
 .modal .modal-content h2 button {
   position: absolute;
-  right: 20px;
-  bottom: 10;
+  right: 0;
+  top: 0;
   border: none;
   background: transparent;
-  width: 22px;
-  height: 22px;
-  font-size: 0;
-  background: url("../images/icon-close.svg") no-repeat center/100% auto;
 }
 .modal .modal-content li {
   margin: 0 0 20px;
