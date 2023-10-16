@@ -1211,6 +1211,7 @@ body div#content.user div.sub-box section.ticket-list div.line span {
   text-align: right;
   font-size: 32px;
   font-weight: 500;
+  min-width: 20%;
 }
 body div#content.user div.sub-box section.ticket-list div.line span u {
   text-decoration: none;
@@ -1245,6 +1246,73 @@ body div#content.user div.sub-box section.card p {
 }
 body div#content.user div.sub-box section.card p span {
   display: block;
+}
+body div#content.user div.sub-box section.ticket-plan {
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 86px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 0;
+}
+body div#content.user div.sub-box section.ticket-plan div.line {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 40px;
+  color: #fff;
+}
+body div#content.user div.sub-box section.ticket-plan div.line strong {
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+}
+body div#content.user div.sub-box section.ticket-plan div.line div.count {
+  font-size: 32px;
+  font-weight: 500;
+}
+body div#content.user div.sub-box section.ticket-plan div.line div.count > button {
+  position: relative;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 50px;
+  padding: 0 60px 0 10px;
+  border-radius: 5px;
+}
+body div#content.user div.sub-box section.ticket-plan div.line div.count > button i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+body div#content.user div.sub-box section.ticket-plan div.line div.count ul {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  left: 140px;
+  right: 50px;
+  top: 100px;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  margin: 0;
+  padding: 20px;
+  font-size: 0;
+}
+body div#content.user div.sub-box section.ticket-plan div.line div.count ul.on {
+  display: block;
+}
+body div#content.user div.sub-box section.ticket-plan div.line div.count ul li {
+  display: inline-block;
+  width: 20%;
+}
+body div#content.user div.sub-box section.ticket-plan div.line div.count ul li button {
+  width: calc(100% - 4px);
+  font-size: 32px;
+  border: none;
+  margin: 2px;
+  background: #000;
+  border-radius: 10px;
 }
 body div#content.user div.sub-box section.result {
   position: relative;
@@ -1318,6 +1386,35 @@ body div#content.user div.sub-box section.ticket-total strong {
 }
 body div#content.user div.sub-box section.ticket-total strong u {
   text-decoration: none;
+}
+body div#content.user div.sub-box section.btn-set {
+  text-align: center;
+  font-size: 0;
+}
+body div#content.user div.sub-box section.btn-set button {
+  height: 111px;
+  border: none;
+  padding: 0 80px;
+  box-shadow: 0 -6px 0 0 rgba(0, 0, 0, 0.4) inset;
+  border-radius: 10px;
+  margin: 30px 10px;
+}
+body div#content.user div.sub-box section.btn-set button.cancel {
+  background: #4e5db2;
+}
+body div#content.user div.sub-box section.btn-set button.pay {
+  background: #0389da;
+}
+body div#content.user div.sub-box section.btn-set button strong {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+body div#content.user div.sub-box section.btn-set button span {
+  display: block;
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.6);
 }
 body div#content.admin div.sub-box {
   display: inline-block;

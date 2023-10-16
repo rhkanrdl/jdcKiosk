@@ -566,6 +566,7 @@ body {
               text-align:right;
               font-size:32px;
               font-weight:500;
+              min-width:20%;
   
               u {
                 text-decoration:none;
@@ -614,6 +615,87 @@ body {
   
         }
 
+  
+        section.ticket-plan {
+          position:relative;
+          z-index:10;
+          background:rgba(0,0,0,.4);
+          margin:0 86px 20px;
+          padding:20px;
+          border-radius:20px;
+          font-size:0;
+  
+          div.line {
+            display:flex;
+            justify-content: space-between;
+            padding:14px 40px;
+            color:#fff;
+  
+            strong {
+              display:block;
+              font-size:32px;
+              font-weight:500;
+            }
+  
+            div.count {
+              font-size:32px;
+              font-weight:500;
+  
+              &>button {
+                position:relative;
+                border:none;
+                background-color:rgba(0,0,0,.4);
+                height:50px;
+                padding:0 60px 0 10px;
+                border-radius:5px;
+                
+                i {
+                  position:absolute;
+                  right:10px;
+                  top:50%;
+                  transform:translateY(-50%);
+                }
+              }
+
+              ul {
+                display:none;
+                position:absolute;
+                z-index:1000;
+                left:140px;
+                right:50px;
+                top:100px;
+                list-style:none;
+                background-color:rgba(0,0,0,.8);
+                border-radius:20px;
+                margin:0;
+                padding:20px;
+                font-size:0;
+
+                &.on {
+                  display:block;
+                }
+
+                li {
+                  display:inline-block;
+                  width:calc(100% / 5);
+
+                  button {
+                    width:calc(100% - 4px);
+                    font-size:32px;
+                    border:none;
+                    margin:2px;
+                    background:#000;
+                    border-radius:10px;
+                  }
+                }
+              }
+              
+  
+            }
+  
+          }
+  
+        }
         section.result {
           position:relative;
           z-index:10;
@@ -702,6 +784,43 @@ body {
             }
           }
   
+        }
+
+        section.btn-set {
+          text-align:center;
+          font-size:0;
+          
+          button {
+            height:111px;
+            border:none;
+            padding:0 80px;
+            @include inner-shadow($x:0,$y: -6px, $blur: 0, $spread: 0, $alpha: 0.4);
+            border-radius:10px;
+            margin:30px 10px;
+
+
+            &.cancel {
+              background:#4e5db2;
+            }
+
+            &.pay {
+              background:#0389da;
+            }
+
+            strong {
+              display:block;
+              font-size:28px;
+              font-weight:600;
+              color:#fff;
+            }
+
+            span {
+              display:block;
+              font-size:26px;
+              color:rgba(255,255,255,.6);
+            }
+
+          }
         }
 
       }

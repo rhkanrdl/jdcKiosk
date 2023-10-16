@@ -17,6 +17,16 @@ $(function () {
   // });
 
 
+  $(".ticket-plan .count .select").on("click", function(){
+    $(this).parent().find("ul").toggleClass("on");
+  });
+
+  $(".ticket-plan .count ul button").on("click", function(){
+    $(".ticket-plan .count .select span").text($(this).html());
+    $(".ticket-plan .count ul").removeClass("on");
+  });
+
+
 
 });
 
