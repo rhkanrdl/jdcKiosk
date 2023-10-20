@@ -604,6 +604,19 @@ button {
 .modal .modal-content div.btn-set button.main {
   background: #0389da;
 }
+.modal .modal-content div.btns {
+  text-align: center;
+  margin: 40px 0 0;
+}
+.modal .modal-content div.btns button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 28px;
+}
+.modal .modal-content div.btns button span {
+  color: #777;
+}
 
 .modal-admin {
   display: none;
