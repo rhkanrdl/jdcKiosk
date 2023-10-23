@@ -815,6 +815,17 @@ body header h1 small {
   display: block;
   font-weight: 400;
 }
+body header a.admin {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: transparent;
+  font-size: 0;
+  width: 140px;
+  height: 140px;
+  cursor: pointer;
+}
 body div#content {
   position: relative;
   height: calc(100% - 226px);
@@ -905,7 +916,7 @@ body div#content.user section.intro-message a {
   z-index: 10000;
   left: 0;
   right: 0;
-  top: 0;
+  top: 226px;
   bottom: 0;
 }
 body div#content.user section.main-btn {

@@ -67,6 +67,18 @@ body {
       }
 
     }
+
+    a.admin {
+      display:block;
+      position:absolute;
+      right:0;
+      top:0;
+      background:transparent;
+      font-size:0;
+      width:140px;
+      height:140px;
+      cursor:pointer;
+    }
   }
 
 
@@ -176,7 +188,7 @@ body {
           z-index:10000;
           left:0;
           right:0;
-          top:0;
+          top:226px;
           bottom:0;
         }
       }
