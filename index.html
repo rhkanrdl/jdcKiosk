@@ -1,208 +1,220 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>infomindUX</title>
 
-    <style>
-      * {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-      }
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>infomindUX</title>
 
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      font-size: 0;
+      text-align: center;
+      padding: 0 20px;
+      background: #222;
+    }
+
+    @media (min-width: 980px) {
       body {
-        min-width: 320px;
-        font-size: 0;
-        text-align: center;
-        padding: 0 20px;
-        background: #222;
-      }
-
-      @media (min-width: 980px) {
-        body {
-          text-align: left;
-        }
-      }
-
-      h1 {
-        margin: 50px 0;
-        font-size: 70px;
-        font-weight: 100;
-        color: #555;
-      }
-
-      h1 small {
-        display: inline-block;
-        color: #fff;
-      }
-
-      .memo {
-        font-size: 16px;
-        background: #ccc;
-        border-radius: 25px;
-        padding: 20px 30px 30px;
-
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
-
-      h2 {
-        margin: 40px 0 20px;
-        font-size: 20px;
-        font-weight: 600;
-        color: #555;
-      }
-
-      h3 {
-        margin: 10px 0 0;
-        font-size: 20px;
-        font-weight: 600;
-      }
-
-      a {
-        display: inline-block;
-        font-size: 16px;
-        background: #444;
-        border-radius: 25px;
-        width: calc((100% - 30px) / 4);
-        padding: 20px;
-        margin: 0 10px 10px 0;
         text-align: left;
-        color: #fff !important;
-        text-decoration: none;
-
-        -webkit-transition: all 0.1s ease;
-        -moz-transition: all 0.1s ease;
-        -o-transition: all 0.1s ease;
-        -ms-transition: all 0.1s ease;
-        transition: all 0.1s ease;
       }
+    }
 
-      a:nth-of-type(4n) {
-        margin-right: 0;
-      }
+    h1 {
+      margin: 50px 0;
+      font-size: 70px;
+      font-weight: 100;
+      color: #555;
+    }
 
-      a:active,
-      a:hover {
-        background: #666;
-        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+    h1 small {
+      display: inline-block;
+      color: #fff;
+    }
 
-        border-radius: 10px;
-      }
+    .memo {
+      font-size: 16px;
+      background: #ccc;
+      border-radius: 25px;
+      padding: 20px 30px 30px;
 
-      @media (max-width: 979px) {
-        a {
-          width: 100%;
-          margin: 0 10px 10px 0;
-        }
-      }
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
-      hr {
-        display: block;
+    h2 {
+      margin: 40px 0 20px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #555;
+    }
+
+    h3 {
+      margin: 10px 0 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 16px;
+      background: #444;
+      border-radius: 25px;
+      width: calc((100% - 30px) / 4);
+      padding: 20px;
+      margin: 0 10px 10px 0;
+      text-align: left;
+      color: #fff !important;
+      text-decoration: none;
+
+      -webkit-transition: all 0.1s ease;
+      -moz-transition: all 0.1s ease;
+      -o-transition: all 0.1s ease;
+      -ms-transition: all 0.1s ease;
+      transition: all 0.1s ease;
+    }
+
+    a:nth-of-type(4n) {
+      margin-right: 0;
+    }
+
+    a:active,
+    a:hover {
+      background: #666;
+      box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+
+      border-radius: 10px;
+    }
+
+    @media (max-width: 979px) {
+      a {
         width: 100%;
-        max-width: 400px;
-        margin: 20px auto;
-        border: none;
+        margin: 0 10px 10px 0;
       }
+    }
 
-      strong {
-        color: #888;
-        display: block;
-        font-size: 20px;
-        font-weight: 600;
-        border-bottom: 1px solid #333;
-        padding-bottom: 10px;
-        margin-bottom: 10px;
+    hr {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      border: none;
+    }
 
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-      }
+    strong {
+      color: #888;
+      display: block;
+      font-size: 20px;
+      font-weight: 600;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
 
-      .co {
-        font-size: 24px;
-        position: absolute;
-        right: 30px;
-        top: 10px;
-        margin: 0;
-        color: #999;
-      }
-    </style>
-  </head>
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
 
-  <body>
-    <h1>
-      PROJECT
-      <small>항공우주박물관</small>
-    </h1>
+    .co {
+      font-size: 24px;
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      margin: 0;
+      color: #999;
+    }
+  </style>
+</head>
 
-    <h2>INFORMATION</h2>
-    <div class="memo">
-      <p>git : https://github.com/rhkanrdl/jamKiosk</p>
-    </div>
+<body>
+  <h1>
+    PROJECT
+    <small>항공우주박물관</small>
+  </h1>
 
-    <div>
-      <h2>사용자화면</h2>
-      <a href="main.html">
-        <strong>메인</strong>
-        main.html
-      </a>
+  <h2>INFORMATION</h2>
+  <div class="memo">
+    <p>git : https://github.com/rhkanrdl/jamKiosk</p>
+  </div>
 
-      <a href="sub1.html">
-        <strong>티켓 종류 선택</strong>
-        sub1.html
-      </a>
+  <div>
+    <h2>사용자화면</h2>
+    <a href="main.html">
+      <strong>메인</strong>
+      main.html
+    </a>
 
-      <a href="sub2.html">
-        <strong>티켓 선택</strong>
-        sub2.html
-      </a>
+    <a href="sub1.html">
+      <strong>티켓 종류 선택</strong>
+      sub1.html
+    </a>
 
-      <a href="sub3.html">
-        <strong>프로그램 선택</strong>
-        sub3.html
-      </a>
+    <a href="sub2.html">
+      <strong>티켓 선택</strong>
+      sub2.html
+    </a>
 
-      <a href="sub4.html">
-        <strong>프로그램 상세</strong>
-        sub4.html
-      </a>
+    <a href="sub3.html">
+      <strong>프로그램 선택</strong>
+      sub3.html
+    </a>
 
-      <a href="sub5.html">
-        <strong>카드결제</strong>
-        sub5.html
-      </a>
+    <a href="sub4.html">
+      <strong>프로그램 상세</strong>
+      sub4.html
+    </a>
 
-      <a href="sub6.html">
-        <strong>결제완료</strong>
-        sub6.html
-      </a>
+    <a href="sub5.html">
+      <strong>카드결제</strong>
+      sub5.html
+    </a>
+
+    <a href="sub6.html">
+      <strong>결제완료</strong>
+      sub6.html
+    </a>
 
 
 
-    </div>
+  </div>
 
-    <div>
-      <h2>관리자화면</h2>
-      <a href="adm1.html">
-        <strong>로그인</strong>
-        adm1.html
-      </a>
-      <a href="adm2.html">
-        <strong>관리자 메인</strong>
-        adm2.html
-      </a>
+  <div>
+    <h2>관리자화면</h2>
+    <a href="adm1.html">
+      <strong>로그인</strong>
+      adm1.html
+    </a>
+    <a href="adm2.html">
+      <strong>관리자 메인</strong>
+      adm2.html
+    </a>
 
-      <a href="adm3.html">
-        <strong>관리자 비밀번호 변경</strong>
-        adm3.html
-      </a>
+    <a href="adm3.html">
+      <strong>관리자 비밀번호 변경</strong>
+      adm3.html
+    </a>
 
-    </div>
-    <p class="co">ⓒ INFOMIND</p>
-  </body>
+
+    <a href="adm4.html">
+      <strong>ax 목록</strong>
+      adm4.html
+    </a>
+
+    <a href="adm5.html">
+      <strong>ax 상세</strong>
+      adm5.html
+    </a>
+  </div>
+  <p class="co">ⓒ INFOMIND</p>
+</body>
+
 </html>

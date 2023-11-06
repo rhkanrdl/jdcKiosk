@@ -1638,6 +1638,227 @@ body div#content.admin div.sub-box section.main div.tools button:last-of-type {
   border-radius: 0 10px 10px 0;
   margin: 0;
 }
+body div#content.admin div.sub-box section.sub-admin div.container {
+  text-align: center;
+  padding: 0 45px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container h2 {
+  display: none;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area {
+  min-height: 120px;
+  padding: 25px 0;
+  color: #fff;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area label {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px 0 0;
+  font-size: 22px;
+  line-height: 70px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area input + label {
+  padding-left: 50px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area u {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  font-size: 22px;
+  line-height: 70px;
+  text-decoration: none;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area input {
+  height: 70px;
+  font-size: 22px;
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
+  width: 180px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area input.text {
+  width: 260px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area button {
+  height: 70px;
+  width: 70px;
+  vertical-align: top;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #0077a8;
+  font-size: 0;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.tool-area button i {
+  font-size: 32px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.info-area {
+  min-height: 120px;
+  padding: 25px 25px 15px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.info-area dl {
+  font-size: 22px;
+  text-align: left;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.info-area dl dt {
+  width: 210px;
+  float: left;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.info-area dl dd {
+  padding: 0 0 10px 220px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.btn-area {
+  min-height: 120px;
+  padding: 25px 0;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  body div#content.admin div.sub-box section.sub-admin div.container div.btn-area {
+    padding: 20px 0;
+  }
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.btn-area button {
+  height: 70px;
+  vertical-align: top;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #000;
+  font-size: 22px;
+  padding: 0 20px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.btn-area button.main {
+  background: #0077a8;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.table-area {
+  height: 1260px;
+  background: #000000;
+  overflow-y: scroll;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.table-area.small {
+  height: 1000px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write {
+  padding: 30px 0 0;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write input[type=text] {
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  font-size: 22px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write input[type=text]::-moz-placeholder {
+  color: #ccc;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write input[type=text]::placeholder {
+  color: #ccc;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write textarea {
+  width: 100%;
+  height: 580px;
+  padding: 30px;
+  font-size: 22px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write textarea::-moz-placeholder {
+  color: #ccc;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write textarea::placeholder {
+  color: #ccc;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area {
+  font-size: 0;
+  text-align: center;
+  padding: 30px 0 50px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.left,
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.right {
+  display: inline-block;
+  width: 49%;
+  font-size: 22px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.left button,
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.right button {
+  padding: 20px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 10px;
+  background: #888;
+  color: #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.left button.sub,
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.right button.sub {
+  background: #36720e;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.left button.main,
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.right button.main {
+  background: #0077a8;
+  padding: 25px 60px;
+  font-size: 24px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.left {
+  text-align: left;
+}
+body div#content.admin div.sub-box section.sub-admin div.container div.board-write div.button-area div.right {
+  text-align: right;
+}
+body div#content.admin div.sub-box section.sub-admin div.container ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 0;
+  display: flex;
+}
+body div#content.admin div.sub-box section.sub-admin div.container ul li {
+  padding: 1px;
+  flex-grow: 1;
+}
+body div#content.admin div.sub-box section.sub-admin div.container ul li a {
+  display: block;
+  padding: 30px 0;
+  color: #fff;
+  background: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+body div#content.admin div.sub-box section.sub-admin div.container ul li a:hover, body div#content.admin div.sub-box section.sub-admin div.container ul li a.active {
+  background: #323232;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div#content.admin div.sub-box section.sub-admin div.container ul li a i {
+  display: block;
+  font-size: 60px;
+  margin: 0 0 20px;
+}
+body div#content.admin div.sub-box section.sub-admin div.container ul.item4 li {
+  width: 25%;
+}
+body div#content.admin div.sub-box section.sub-admin div.container ul.item3 li {
+  width: 33.3333333333%;
+}
+body div#content.admin div.sub-box section.sub-admin.error div.container h2 {
+  color: #f1592a;
+}
+body div#content.admin div.sub-box section.sub-admin.error div.container h2::before {
+  display: none;
+}
 body div#content nav {
   position: relative;
   padding: 0 0 120px;
