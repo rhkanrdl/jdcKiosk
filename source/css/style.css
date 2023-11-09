@@ -1232,11 +1232,15 @@ body div#content.user div.sub-box section.ticket-list div.line {
   color: #fff;
 }
 body div#content.user div.sub-box section.ticket-list div.line strong {
-  display: block;
+  flex: 1 1 50%;
   font-size: 32px;
   font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 body div#content.user div.sub-box section.ticket-list div.line div.count {
+  flex: 1 1 25%;
   font-size: 32px;
   font-weight: 500;
 }
@@ -1255,7 +1259,7 @@ body div#content.user div.sub-box section.ticket-list div.line div.count input {
   text-align: center;
 }
 body div#content.user div.sub-box section.ticket-list div.line span {
-  display: block;
+  flex: 1 1 30%;
   text-align: right;
   font-size: 32px;
   font-weight: 500;
