@@ -3,6 +3,7 @@ $(function () {
 
 
   var swiper = new Swiper(".ticket-swiper", {
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

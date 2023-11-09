@@ -993,7 +993,31 @@ body div#content.user div.sub-box section.ticket-select {
 body div#content.user div.sub-box section.ticket-select.on {
   display: block;
 }
-body div#content.user div.sub-box section.ticket-select button {
+body div#content.user div.sub-box section.ticket-select .swiper-button {
+  background: #000;
+  width: 86px;
+  height: 130px;
+  opacity: 0.7;
+}
+body div#content.user div.sub-box section.ticket-select .swiper-button.swiper-button-prev {
+  left: 0;
+}
+body div#content.user div.sub-box section.ticket-select .swiper-button.swiper-button-next {
+  right: 0;
+}
+body div#content.user div.sub-box section.ticket-select .swiper-button.swiper-button-disabled {
+  opacity: 0.1;
+}
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper {
+  overflow: visible;
+}
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide {
+  opacity: 0.6;
+}
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide.swiper-slide-active {
+  opacity: 1;
+}
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button {
   position: relative;
   overflow: hidden;
   width: 276px;
@@ -1004,43 +1028,43 @@ body div#content.user div.sub-box section.ticket-select button {
   border-radius: 14px;
   background: none;
 }
-body div#content.user div.sub-box section.ticket-select button.type1 {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button.type1 {
   background: url(../images/sub_btn0101.png) no-repeat center top/100% auto;
 }
-body div#content.user div.sub-box section.ticket-select button.type2 {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button.type2 {
   background: url(../images/sub_btn0102.png) no-repeat center top/100% auto;
 }
-body div#content.user div.sub-box section.ticket-select button.type3 {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button.type3 {
   background: url(../images/sub_btn0103.png) no-repeat center top/100% auto;
 }
-body div#content.user div.sub-box section.ticket-select button.type4 {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button.type4 {
   background: url(../images/sub_btn0104.png) no-repeat center top/100% auto;
 }
-body div#content.user div.sub-box section.ticket-select button.type5 {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button.type5 {
   background: url(../images/sub_btn0105.png) no-repeat center top/100% auto;
 }
-body div#content.user div.sub-box section.ticket-select button img {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button img {
   position: absolute;
   z-index: -1;
   left: 0;
   right: 0;
   top: 0;
 }
-body div#content.user div.sub-box section.ticket-select button strong {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button strong {
   display: block;
   font-weight: 600;
   font-size: 30px;
   color: #171860;
 }
-body div#content.user div.sub-box section.ticket-select button span {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button span {
   display: block;
   font-size: 28px;
 }
-body div#content.user div.sub-box section.ticket-select button span u {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button span u {
   text-decoration: none;
   font-weight: 900;
 }
-body div#content.user div.sub-box section.ticket-select button > u {
+body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button > u {
   font-size: 24px;
   color: #777;
   text-decoration: none;
