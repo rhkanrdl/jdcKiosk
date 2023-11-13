@@ -81,6 +81,30 @@ body {
 
     /* User */
     &.user {
+      section.now-loading {
+        height: 812px;
+        padding: 260px 40px 0;
+        text-align: center;
+
+        i {
+          font-size: 200px;
+          color: #fff;
+          margin-bottom: 60px;
+        }
+
+        strong {
+          display: block;
+          font-size: 44px;
+          color: #fff;
+          font-weight: 500;
+        }
+
+        span {
+          display: block;
+          font-size: 34px;
+          color: #c5c5c5;
+        }
+      }
       section.welcome-message {
         height: 812px;
         padding: 260px 40px 0;
