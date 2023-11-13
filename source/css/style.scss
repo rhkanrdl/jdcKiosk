@@ -294,72 +294,105 @@ body {
             display: block;
           }
 
-          button {
-            position: relative;
-            overflow: hidden;
-            width: 276px;
-            height: 320px;
-            border: none;
-            margin: 0 20px 20px 0;
-            padding: 180px 0 0;
-            border-radius: 14px;
-            background: none;
+          .swiper-button {
+            background:#000;
+            width:86px;
+            height:130px;
+            opacity:.7;
 
-            &.type1 {
-              background: url(../images/sub_btn0101.png) no-repeat center top /
-                100% auto;
+            &.swiper-button-prev {
+              left:0;
             }
 
-            &.type2 {
-              background: url(../images/sub_btn0102.png) no-repeat center top /
-                100% auto;
+            &.swiper-button-next {
+              right:0;
             }
 
-            &.type3 {
-              background: url(../images/sub_btn0103.png) no-repeat center top /
-                100% auto;
+            &.swiper-button-disabled {
+              opacity:.1;
             }
+          }
 
-            &.type4 {
-              background: url(../images/sub_btn0104.png) no-repeat center top /
-                100% auto;
-            }
+          div.ticket-swiper {
+            overflow:visible;
 
-            &.type5 {
-              background: url(../images/sub_btn0105.png) no-repeat center top /
-                100% auto;
-            }
+            div.swiper-slide {
+              opacity:.6;
 
-            img {
-              position: absolute;
-              z-index: -1;
-              left: 0;
-              right: 0;
-              top: 0;
-            }
-
-            strong {
-              display: block;
-              font-weight: 600;
-              font-size: 30px;
-              color: #171860;
-            }
-
-            span {
-              display: block;
-              font-size: 28px;
-
-              u {
-                text-decoration: none;
-                font-weight: 900;
+              &.swiper-slide-active {
+                opacity:1;
               }
+
+              button {
+                position: relative;
+                overflow: hidden;
+                width: 276px;
+                height: 320px;
+                border: none;
+                margin: 0 20px 20px 0;
+                padding: 180px 0 0;
+                border-radius: 14px;
+                background: none;
+    
+                &.type1 {
+                  background: url(../images/sub_btn0101.png) no-repeat center top /
+                    100% auto;
+                }
+    
+                &.type2 {
+                  background: url(../images/sub_btn0102.png) no-repeat center top /
+                    100% auto;
+                }
+    
+                &.type3 {
+                  background: url(../images/sub_btn0103.png) no-repeat center top /
+                    100% auto;
+                }
+    
+                &.type4 {
+                  background: url(../images/sub_btn0104.png) no-repeat center top /
+                    100% auto;
+                }
+    
+                &.type5 {
+                  background: url(../images/sub_btn0105.png) no-repeat center top /
+                    100% auto;
+                }
+    
+                img {
+                  position: absolute;
+                  z-index: -1;
+                  left: 0;
+                  right: 0;
+                  top: 0;
+                }
+    
+                strong {
+                  display: block;
+                  font-weight: 600;
+                  font-size: 30px;
+                  color: #171860;
+                }
+    
+                span {
+                  display: block;
+                  font-size: 28px;
+    
+                  u {
+                    text-decoration: none;
+                    font-weight: 900;
+                  }
+                }
+    
+                & > u {
+                  font-size: 24px;
+                  color: #777;
+                  text-decoration: none;
+                }
+              }
+
             }
 
-            & > u {
-              font-size: 24px;
-              color: #777;
-              text-decoration: none;
-            }
           }
         }
 
@@ -557,12 +590,17 @@ body {
             color: #fff;
 
             strong {
-              display: block;
+              flex: 1 1 50%;
               font-size: 32px;
               font-weight: 500;
+              overflow:hidden;
+              white-space:nowrap;
+              text-overflow:ellipsis;
+
             }
 
             div.count {
+              flex: 1 1 25%;
               font-size: 32px;
               font-weight: 500;
 
@@ -584,7 +622,7 @@ body {
             }
 
             span {
-              display: block;
+              flex:1 1 30%;
               text-align: right;
               font-size: 32px;
               font-weight: 500;
