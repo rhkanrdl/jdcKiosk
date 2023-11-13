@@ -853,6 +853,27 @@ body div#content.user section.now-loading span {
   font-size: 34px;
   color: #c5c5c5;
 }
+body div#content.user section.now-loading {
+  height: 812px;
+  padding: 260px 40px 0;
+  text-align: center;
+}
+body div#content.user section.now-loading i {
+  font-size: 200px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+body div#content.user section.now-loading strong {
+  display: block;
+  font-size: 44px;
+  color: #fff;
+  font-weight: 500;
+}
+body div#content.user section.now-loading span {
+  display: block;
+  font-size: 34px;
+  color: #c5c5c5;
+}
 body div#content.user section.welcome-message {
   height: 812px;
   padding: 260px 40px 0;
