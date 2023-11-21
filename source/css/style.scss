@@ -236,10 +236,10 @@ body {
 
         a {
           display: inline-block;
-          width: 378px;
-          height: 615px;
-          margin: 0 20px;
-          padding: 160px 0 0;
+          flex:1 1 20%;
+          height: 382px;
+          margin: 0 10px;
+          padding: 100px 0 0;
           text-align: center;
 
           &.ticket {
@@ -252,6 +252,12 @@ body {
               auto;
           }
 
+
+          &.education {
+            background: url(../images/main_btn04.png) no-repeat center / 100%
+              auto;
+          }
+
           &.product {
             background: url(../images/main_btn03.png) no-repeat center / 100%
               auto;
@@ -261,11 +267,12 @@ body {
             display: block;
             font-size: 48px;
             font-weight: 600;
+            margin-bottom:10px;
           }
 
           span {
             display: block;
-            font-size: 28px;
+            font-size: 20px;
             color: #777;
           }
         }
