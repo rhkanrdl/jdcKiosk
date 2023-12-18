@@ -1098,6 +1098,8 @@ body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.sw
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   top: 0;
 }
 body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button strong {
@@ -1155,6 +1157,8 @@ body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-ima
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image strong {
   display: block;
