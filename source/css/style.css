@@ -1095,6 +1095,9 @@ body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.sw
   z-index: -1;
   left: 0;
   width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   top: 0;
 }
 body div#content.user div.sub-box section.ticket-select div.ticket-swiper div.swiper-slide button strong {
@@ -1147,8 +1150,11 @@ body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-ima
   position: absolute;
   z-index: -1;
   left: 0;
-  right: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body div#content.user div.sub-box section.ticket-view div.swiper-slide p.big-image strong {
   display: block;
