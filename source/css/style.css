@@ -1530,7 +1530,7 @@ body div#content.admin div.sub-box section.login {
   width: 800px;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 40px;
-  margin: 160px auto;
+  margin: 160px auto 80px;
   padding: 80px 160px;
   text-align: center;
   font-size: 0;
@@ -1939,6 +1939,49 @@ body div#content.admin div.sub-box section.sub-admin.error div.container h2 {
 }
 body div#content.admin div.sub-box section.sub-admin.error div.container h2::before {
   display: none;
+}
+body div#content.admin article.keypad {
+  background: #000;
+  color: #fff;
+  font-size: 0;
+  padding: 20px 190px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+body div#content.admin article.keypad p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+}
+body div#content.admin article.keypad p button {
+  border: none;
+  border-radius: 28px;
+  margin: 10px;
+  padding: 0;
+  height: 80px;
+  width: 80px;
+  font-size: 60px;
+  font-weight: 600;
+  background: #555;
+  border-bottom: 8px solid rgba(0, 0, 0, 0.4);
+}
+body div#content.admin article.keypad p button:active {
+  background: #504F57;
+  transition: all 0s linear;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+body div#content.admin article.keypad p button.del {
+  background: #8B4242;
+  width: 180px;
+  font-size: 40px;
+}
+body div#content.admin article.keypad p button.back {
+  background: #333;
+  width: 180px;
+  font-size: 0;
+}
+body div#content.admin article.keypad p button.back i {
+  font-size: 80px;
 }
 body div#content nav {
   position: relative;
